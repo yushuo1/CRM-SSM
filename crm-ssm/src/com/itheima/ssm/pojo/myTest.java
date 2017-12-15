@@ -4,8 +4,17 @@ public class myTest {
 
 	private String id;
 	private String name;
+	private String addris;
 	
 	
+	public String getAddris() {
+		return addris;
+	}
+
+	public void setAddris(String addris) {
+		this.addris = addris;
+	}
+
 	public String getName() {
 		return name;
 	}
