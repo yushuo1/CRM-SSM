@@ -5,8 +5,13 @@ public class myTest {
 	private String id;
 	private String name;
 	private String addris;
+	private String sex;
 	
 	
+	public void setSex(String sex) {
+		this.sex = sex;
+	}
+
 	public String getAddris() {
 		return addris;
 	}
