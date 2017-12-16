@@ -5,8 +5,17 @@ public class myTest {
 	private String id;
 	private String name;
 	private String addris;
+	private int age;
 	
 	
+	public int getAge() {
+		return age;
+	}
+
+	public void setAge(int age) {
+		this.age = age;
+	}
+
 	public String getAddris() {
 		return addris;
 	}
