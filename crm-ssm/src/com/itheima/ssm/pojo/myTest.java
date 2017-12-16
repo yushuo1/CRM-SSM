@@ -1,12 +1,22 @@
 package com.itheima.ssm.pojo;
 
+import java.util.Date;
+
 public class myTest {
 
 	private String id;
 	private String name;
 	private String addris;
+	private Date  birthday;
 	
-	
+	public Date getBirthday() {
+		return birthday;
+	}
+
+	public void setBirthday(Date birthday) {
+		this.birthday = birthday;
+	}
+
 	public String getAddris() {
 		return addris;
 	}
