@@ -29,7 +29,7 @@ public class CustomerController {
 	
 	@RequestMapping("customer/list")
 	public String findByPage(QueryCondition condition,@RequestParam(defaultValue="1")int page, Model model ) throws IOException{		
-		//解决查询条件乱码问题
+		//瑙ｅ喅鏌ヨ鏉′欢涔辩爜闂
 		String custName = condition.getCustName();
 		String name = new String(custName.getBytes("iso8859-1"), "utf-8");
 		condition.setCustName(name);
@@ -43,11 +43,11 @@ public class CustomerController {
 		model.addAttribute("levelType", levelType);
 		
 		
-		//根据查询条件查询对应的用户
+		//鏍规嵁鏌ヨ鏉′欢鏌ヨ瀵瑰簲鐨勭敤鎴�
 		Page<Customer> Customers = customerService.findByCondition(condition,page);
 		model.addAttribute("page", Customers);
 		
-		//回显查询条件
+		//鍥炴樉鏌ヨ鏉′欢
 		model.addAttribute("custName", condition.getCustName());
 		model.addAttribute("custSource", condition.getCustSource());
 		model.addAttribute("custIndustry", condition.getCustIndustry());
@@ -58,7 +58,7 @@ public class CustomerController {
 	}
 	
 	/**
-	 * 查询修改返显数据
+	 * 鏌ヨ淇敼杩旀樉鏁版嵁
 	 * @param id
 	 * @param model
 	 * @return
@@ -71,7 +71,7 @@ public class CustomerController {
 	}
 	
 	/**
-	 * 修改客户信息
+	 * 淇敼瀹㈡埛淇℃伅
 	 * @param customer
 	 * @return
 	 */

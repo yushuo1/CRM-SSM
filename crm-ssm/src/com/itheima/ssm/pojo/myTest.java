@@ -1,12 +1,16 @@
 package com.itheima.ssm.pojo;
 
+import java.util.Date;
+
 public class myTest {
 
 	private String id;
 	private String name;
 	private String addris;
 	private int age;
-	
+	private String sex;
+	private Date  birthday;
+
 	
 	public int getAge() {
 		return age;
@@ -14,6 +18,22 @@ public class myTest {
 
 	public void setAge(int age) {
 		this.age = age;
+	}
+	
+	public void setSex(String sex) {
+		this.sex = sex;
+	}
+	
+	public String getSex() {
+		return sex;
+	}
+
+	public Date getBirthday() {
+		return birthday;
+	}
+
+	public void setBirthday(Date birthday) {
+		this.birthday = birthday;
 	}
 
 	public String getAddris() {
