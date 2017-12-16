@@ -1,15 +1,30 @@
 package com.itheima.ssm.pojo;
 
+import java.util.Date;
+
 public class myTest {
 
 	private String id;
 	private String name;
 	private String addris;
 	private String sex;
-	
+	private Date  birthday;
+
 	
 	public void setSex(String sex) {
 		this.sex = sex;
+	}
+	
+	public String getSex() {
+		return sex;
+	}
+
+	public Date getBirthday() {
+		return birthday;
+	}
+
+	public void setBirthday(Date birthday) {
+		this.birthday = birthday;
 	}
 
 	public String getAddris() {
